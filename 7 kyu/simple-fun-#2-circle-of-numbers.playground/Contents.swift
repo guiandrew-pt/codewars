@@ -29,7 +29,10 @@
 func circleOfNumbers(_ n: Int, _ fst: Int) -> Int {
     // your code here
     
-    return 0
+    // First we divide n by 2, next sum the fst, then we find the remainder to give the value between 0 and n
+    let opposite = ((n / 2) + fst) % n
+    
+    return opposite
 }
 
 print(circleOfNumbers(10, 2), 7)
