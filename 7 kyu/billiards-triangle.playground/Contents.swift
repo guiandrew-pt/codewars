@@ -16,9 +16,10 @@
  Write a function that takes number of balls (≥ 1) and calculates how many levels you can build a triangle.
 */
 
-func pyramid(_ balls: Int) -> Int{
+func pyramid(_ balls: Int) -> Int {
+    let result = Int(((Float((balls * 8) + 1).squareRoot()) - 1) / 2)
     
-    return 0
+    return result
 }
 
 func testExample() {
